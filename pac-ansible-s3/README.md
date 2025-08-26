@@ -26,15 +26,17 @@ The chosen use case: **Enable versioning on all S3 buckets** in an AWS account.
 ---
 
 ## 🛠️ Project Structure
+
 .
 ├── README.md
-├── S3_versioning.yaml        # Ansible Playbook to enforce S3 versioning
-└── screenshots/              # Execution & verification screenshots
-   ├── 01_cli_list_buckets.png
-   ├── 02_ui_list_buckets.png
-   ├── 03_ui_versioning_disabled.png
-   ├── 04_cli_versioning_enabled.png
-   └── 05_ui_versioning_enabled.png
+├── S3_versioning.yaml
+└── screenshots
+    ├── 01_cli_list_buckets.png
+    ├── 02_ui_list_buckets.png
+    ├── 03_ui_versioning_disabled.png
+    ├── 04_cli_versioning_enabled.png
+    └── 05_ui_versioning_enabled.png
+
 
 ---
 
@@ -90,6 +92,6 @@ The chosen use case: **Enable versioning on all S3 buckets** in an AWS account.
 
 ## 🙏 Credits
 
-Project inspired by Abhishek Veeramalla
-Video Reference: https://youtu.be/CZxJ2Sr1o7w?si=ysBYcM9m01IfSiz4
+- Project inspired by Abhishek Veeramalla
+- Video Reference: https://youtu.be/CZxJ2Sr1o7w?si=ysBYcM9m01IfSiz4
 
