@@ -1,0 +1,16 @@
+---
+- name: Enforce S3 Versioning (Policy as Code)
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Get all the S3 buckets
+      amazon.aws.s3_bucket_info:
+      register: result
+
+    - name: Enable versioning on each bucket
+      amazon.aws.s3_bucket:
+        name: "{{ item.name }}"
+        versioning: yes
+      loop: "{{ result.buckets }}"
